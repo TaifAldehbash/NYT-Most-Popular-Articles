@@ -1,17 +1,22 @@
-# nytarticles
+# NYT Most Popular Articles
 
-A new Flutter project.
+This simple application shows the most popular New York Times articles for the past week.
+It utilizes the New York Times APIs.
 
-## Getting Started
+# To Run The Application
 
-This project is a starting point for a Flutter application.
+Run the following command in the terminal `flutter run --dart-define API_KEY=[YOUR_KEY]`
 
-A few resources to get you started if this is your first Flutter project:
+# To Run Unit Tests
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Run the following command in the terminal `flutter test`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# NYT-Most-Popular-Articles
+# To Generate Coverage Reports
+
+Run the following commands in the terminal:
+- Generate `coverage/lcov.info` file `flutter test –coverage`
+
+- Generate HTML report `genhtml coverage/lcov.info -o coverage/html`
+  Note: on macOS you need to have lcov installed on your system (`brew install lcov`) to use this:
+
+- Open the report `open coverage/html/index.html`
